@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+
+:root {
+    --light-blue: #7bffe9;
+    --dark-blue: #2A3B49;    ;
+    --black: #000;
+    --white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;  
+}
+body {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: var(--dark-blue);
+}
+
+.dark_mode {
+    background-color: var(--dark-blue);
+}
+.ligh_mode {
+    background-color: var(--white);
+}
+
+.light_button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.dark_button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.light_button:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.dark_button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
+.nav a {
+    margin: 10px;
+    color: var(--white);
+}

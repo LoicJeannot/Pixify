@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+
+:root {
+    --light-blue: #7bffe9;
+    --dark-blue: #2A3B49;    ;
+    --black: #000;
+    --white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+h1 {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.dark_mode {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.dark_mode nav a {
+    color: var(--white);
+}
+
+.light_mode {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.light_mode nav a {
+color: var(--black);
+}
+
+#light_button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#dark_button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+#light_button:hover {
+    border: solid 2px var(--light-blue);
+}
+
+#dark_button:hover {
+    border: solid 2px var(--light-blue);
+}
+
+.hidden {
+    display: none;
+}
+
+h1 a {
+    color:#7bffe9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
+nav a {
+    margin: 10px;
+    color: var(--white);
+}
+
+.submission_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.img_container img {
+    width: 300px;
+    height: auto;
+}
+
+.img_card {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: var(--dark-blue);
+}
+
+form legend {
+    color: white;
+}
+
+input {
+    border-radius: 10px;
+    margin: 10px;
+    width: 360px;
+    height: 40px;
+    border: none;
+}
+
+.submit_button {
+    border: solid 2px var(--light-blue);
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 40px;
+    padding: 25px 50px;
+    color: var(--light-blue);
+}
